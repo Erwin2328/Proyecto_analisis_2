@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('img.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la ventana */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 115, 177, 0.8); /* Fondo semi-transparente */
+    padding: 15px;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 24px;
+}
+
+.navbar nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del perfil */
+.profile {
+    background-color: rgba(243, 246, 248, 0.9); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+}
+
+/* Estilo del chatbot */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#chatbox {
+    padding: 10px;
+}
+
+#messages {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.user-message {
+    background-color: #0073b1;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+#chat-form {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+#userMessage {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 0 0 0 10px;
+}
+
+#userMessage:focus {
+    outline: none;
+}
+
+button {
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 0 0 10px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f8a;
+}
